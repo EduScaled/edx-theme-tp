@@ -1,0 +1,41 @@
+## mako
+<%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
+<%! from datetime import datetime %>
+<%! from pytz import UTC %>
+
+<footer class="typical-platform-footer-global">
+  <div class="wrapper-footer-typical" aria-label="Ссылки">
+    <div class="row">
+      <div class="block-link">
+        © ${settings.COPYRIGHT_YEAR} ${static.get_platform_name()}
+      </div>
+      <div class="block-link">
+        <a href="http://openedx.org" target="_blank" class="openedx-logo">
+          <img src="${settings.SSO_NPOED_URL}/static/img/edx-openedx-logo-tag.png" width="150" height="50" alt="Powered by Open edX" />
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="block-link">
+        <a href="${settings.PLP_URL}/about" class="color-default" target="_blank">О проекте</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="block-link">
+        <a href="${settings.PLP_URL}/terms/" class="color-default" target="_blank">Пользовательское соглашение</a>
+      </div>
+      <div class="block-link">
+        <a href="${settings.PLP_URL}/privacy_policy" class="color-default" target="_blank">Политика конфиденциальности</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="block-link">
+        <a href="${settings.PLP_URL}/contacts" class="color-default" target="_blank">Контакты</a>
+      </div>
+      <div class="block-link">
+        <a href="${settings.PLP_URL}/feedback" class="color-orange" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i> Сообщить о проблеме</a>
+      </div>
+    </div>
+  </div>
+</footer>

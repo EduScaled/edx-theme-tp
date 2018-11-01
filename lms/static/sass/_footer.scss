@@ -1,0 +1,39 @@
+.typical-platform-footer-global {
+
+  background-color: #4a4a4a;
+  margin: 0 auto 0;
+  padding: 30px 10px;
+  color: #fff;
+
+  .wrapper-footer-typical {
+    margin: 0 auto;
+    max-width: 1180px;
+    border: none;
+
+    .row {
+      display: inline-block;
+      width: 20%;
+      min-width: 200px;
+      vertical-align: top;
+      font-size: 13px;
+      line-height: 1.5;
+
+      .block-link {
+        width: 180px;
+        margin-bottom: 14px;
+      }
+
+      a.color-orange, a.color-orange:hover, a.color-orange:visited  {
+        color: #f9be6b !important;
+      }
+
+      a.color-default, a.color-default:hover, a.color-default:visited {
+        color: #fff;
+      }
+
+      a.color-default:hover, a.color-orange:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
