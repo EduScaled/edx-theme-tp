@@ -32,6 +32,7 @@
         left: 0;
         width: 140px;
         border-radius: 3px 0 0 3px;
+        text-transform: none !important;
       }
 
       .button_color_blue {
@@ -96,12 +97,33 @@
         border: none;
         padding: 0;
         cursor: pointer;
+        box-shadow: none;
       }
     }
 
     .user-block {
       width: 25%;
       text-align: right;
+
+      .user-involvement-info {
+        display: none;
+
+        .involvement-icon, .involvement-icon:focus, .involvement-icon:visited, .involvement-icon:active {
+          background-image: none !important;
+          box-shadow: none !important;
+          border: 2px solid #fff;
+          background-color: #000;
+          color: #fff;
+          cursor: pointer;
+          text-align: center;
+          padding: 7px 4px 10px 4px;
+        }
+
+        .involvement-icon:hover {
+          background-color: #fff;
+          color: #000;
+        }
+      }
 
       .header-dropdown {
         position: relative;
@@ -151,7 +173,7 @@
         margin-left: 7px;
       }
 
-      .user-lk, .user-dropdown-menu {
+      .user-lk, .user-dropdown-menu, .involvement-icon {
         border-radius: 3px;
       }
 
